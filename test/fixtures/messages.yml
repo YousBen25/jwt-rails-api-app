@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  toUserId: 1
+  listing: one
+  content: MyText
+  datetime: 2021-02-15 07:56:07
+
+two:
+  user: two
+  toUserId: 1
+  listing: two
+  content: MyText
+  datetime: 2021-02-15 07:56:07
