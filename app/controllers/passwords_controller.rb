@@ -8,7 +8,7 @@ class PasswordsController < ApplicationController
 
     if user.present?
       user.generate_password_token! #generate pass token
-      UserMailer.with(user: user).forgot_password.deliver_now
+      # UserMailer.with(user: user).forgot_password.deliver_now
       render json: {status: 'ok'}, status: :ok
     else
       render json: {error: ['Email address not found. Please check and try again.']}, status: :not_found
